@@ -4,8 +4,6 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 $(call inherit-product, device/lge/msm7x27-common/device.mk)
 $(call inherit-product-if-exists, vendor/lge/p690/p690-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/p690/overlay
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qt602240_ts_input.kl:system/usr/keylayout/qt602240_ts_input.kl \
     $(LOCAL_PATH)/configs/gelato_keypad.kl:system/usr/keylayout/gelato_keypad.kl \
@@ -27,6 +25,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio_policy.p690 \
     audio.primary.p690
+
+PRODUCT_PACKAGES += \
+    libcamera \
 
 # Full-featured build of the Open-Source
 $(call inherit-product, build/target/product/full.mk)

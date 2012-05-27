@@ -26,8 +26,8 @@ PRODUCT_CHARACTERISTICS := phone
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=lge_p690 \
-    BUILD_FINGERPRINT="lge/gelato/gelato:2.3.3/GRI40/LG-P690-V20g.19C11F164C:user/release-keys" \
-    PRIVATE_BUILD_DESC="gelato-user 2.3.3 GRI40 LG-P690-V20g.19C11F164C release-keys"
+    BUILD_FINGERPRINT="lge/gelato/gelato:2.3.3/GRI40/LG-P690-V10c.19C11F164C:user/release-keys" \
+    PRIVATE_BUILD_DESC="gelato-user 2.3.3 GRI40 LG-P690-V10c.19C11F164C release-keys"
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := OptimusNet
