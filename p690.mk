@@ -10,11 +10,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qt602240_ts_input.kl:system/usr/keylayout/qt602240_ts_input.kl \
     $(LOCAL_PATH)/configs/gelato_keypad.kl:system/usr/keylayout/gelato_keypad.kl \
     $(LOCAL_PATH)/configs/gelato_keypad.kcm.bin:system/usr/keychars/gelato_keypad.kcm.bin \
-    $(LOCAL_PATH)/configs/synaptics-rmi-ts.idc:system/usr/idc/synaptics-rmi-ts.idc 
+    $(LOCAL_PATH)/configs/synaptics-rmi-ts.idc:system/usr/idc/synaptics-rmi-ts.idc \
+    $(LOCAL_PATH)/prebuilt/init.qcom.sh:root/init.qcom.sh 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.p690.rc:root/init.p690.rc \
     $(LOCAL_PATH)/ueventd.p690.rc:root/ueventd.p690.rc
+
+# Wi-Fi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nvram.txt:system/etc/wl/nvram.txt \
+    $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # P500 Audio
 PRODUCT_PACKAGES += \
