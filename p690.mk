@@ -11,7 +11,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gelato_keypad.kl:system/usr/keylayout/gelato_keypad.kl \
     $(LOCAL_PATH)/configs/gelato_keypad.kcm.bin:system/usr/keychars/gelato_keypad.kcm.bin \
     $(LOCAL_PATH)/configs/synaptics-rmi-ts.idc:system/usr/idc/synaptics-rmi-ts.idc \
-    $(LOCAL_PATH)/prebuilt/init.qcom.sh:root/init.qcom.sh 
+    $(LOCAL_PATH)/prebuilt/init.qcom.bt.sh:system/bin/init.qcom.bt.sh
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.p690.rc:root/init.p690.rc \
