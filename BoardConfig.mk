@@ -6,6 +6,9 @@ TARGET_KERNEL_CONFIG := p690-perf_defconfig
 TARGET_BOOTLOADER_BOARD_NAME := p690
 TARGET_OTA_ASSERT_DEVICE := gelato,p690
 
+# Nedeed for sensors
+COMMON_GLOBAL_CFLAGS += -DUSE_LGE_ALS_DUMMY
+
 # Wireless
 BOARD_WLAN_DEVICE               := bcm4330
 WIFI_DRIVER_FW_STA_PATH         := "/system/etc/wl/rtecdc.bin"
