@@ -13,8 +13,8 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.p690.rc:root/init.p690.rc \
-    $(LOCAL_PATH)/ueventd.p690.rc:root/ueventd.p690.rc
+        $(LOCAL_PATH)/init.qcom.rc:root/init.qcom.rc \
+        $(LOCAL_PATH)/init.qcom.usb.rc:root/init.qcom.usb.rc 
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
@@ -25,9 +25,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio_policy.p690 \
     audio.primary.p690
-
-PRODUCT_PACKAGES += \
-    libcamera \
 
 # Full-featured build of the Open-Source
 $(call inherit-product, build/target/product/full.mk)
