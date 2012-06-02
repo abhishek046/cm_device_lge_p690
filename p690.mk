@@ -11,10 +11,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/synaptics-rmi-ts.idc:system/usr/idc/synaptics-rmi-ts.idc \
     $(LOCAL_PATH)/prebuilt/init.qcom.bt.sh:system/bin/init.qcom.bt.sh
 
-
+# p690 init
 PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/init.qcom.rc:root/init.qcom.rc \
-        $(LOCAL_PATH)/init.qcom.usb.rc:root/init.qcom.usb.rc 
+    $(LOCAL_PATH)/init.p690.rc:root/init.p690.rc \
+    $(LOCAL_PATH)/ueventd.p690.rc:root/ueventd.p690.rc
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
