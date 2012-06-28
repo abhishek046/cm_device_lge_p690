@@ -10,22 +10,12 @@ persist.rild.nitz_short_ons_1=
 persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 
+ril.subscription.types=NV,RUIM
+ro.telephony.ril_class=LGEQualcommRIL
 mobiledata.interfaces=rmnet0,rmnet1,rmnet2
 ro.telephony.ril.v3=signalstrength,skipbrokendatacall,facilitylock,datacall,icccardstatus,1
 
 persist.sys.usb.config=mass_storage,adb
-
-# 3g Signal tweaks
-ro.ril.hsxpa=2
-ro.ril.gprsclass=10 
-ro.ril.hep=1
-ro.ril.enable.dtm=1
-ro.ril.hsdpa.category=10
-ro.ril.enable.a53=1
-ro.ril.enable.3g.prefix=1
-ro.ril.htcmaskw1.bitmask=4294967295
-ro.ril.htcmaskw1=14449
-ro.ril.hsupa.category=5
 
 ro.bt.bdaddr_path=/data/misc/bd_addr
 
