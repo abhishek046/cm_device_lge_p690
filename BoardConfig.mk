@@ -6,9 +6,6 @@ TARGET_KERNEL_CONFIG := cyanogenmod_p690_defconfig
 TARGET_BOOTLOADER_BOARD_NAME := p690
 TARGET_OTA_ASSERT_DEVICE := gelato,p690
 
-# Nedeed for sensors
-COMMON_GLOBAL_CFLAGS += -DUSE_LGE_ALS_DUMMY
-
 # Wi-Fi & Wi-Fi HotSpot
 WPA_SUPPLICANT_VERSION          := VER_0_6_X
 BOARD_WLAN_DEVICE               := bcm4330
