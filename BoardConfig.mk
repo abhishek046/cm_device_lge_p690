@@ -1,8 +1,14 @@
 -include vendor/lge/p690/BoardConfigVendor.mk
 -include device/lge/msm7x27-common/BoardConfigCommon.mk
 
+#Kernel
+TARGET_KERNEL_SOURCE := kernel/lge/p690
 TARGET_KERNEL_CONFIG := cyanogenmod_p690_defconfig
++TARGET_SPECIFIC_HEADER_PATH := device/lge/p690/include
+#TARGET_PREBUILT_KERNEL := device/lge/p500/prebuilt/zImage
 
+#Boot loader
+TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := p690
 TARGET_OTA_ASSERT_DEVICE := gelato,p690
 
@@ -27,3 +33,9 @@ BOARD_HAVE_FM_RADIO := true
 BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO -DFM_RADIO
 
 USE_CAMERA_STUB := false
+
+# Camera
++#BOARD_CAMERA_USE_GETBUFFERINFO := true
++#BOARD_USE_CAF_LIBCAMERA := true
++# This is needed by libcamera.so
++BOARD_USE_NASTY_PTHREAD_CREATE_HACK := true
